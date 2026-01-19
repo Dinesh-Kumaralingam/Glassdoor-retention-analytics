@@ -2,7 +2,7 @@
 **Author:** Dinesh Kumaralingam
 
 ## 📌 Executive Summary
-High employee turnover is a critical cost driver for modern enterprises. This project is an end-to-end analytics solution—spanning cloud-based data collection, natural language processing, and predictive modeling—designed to identify retention drivers and forecast workforce churn.
+High employee turnover is a critical cost driver for modern enterprises. This project is an end-to-end analytics solution spanning cloud-based data collection, natural language processing, and predictive modeling designed to identify retention drivers and forecast workforce churn.
 
 **Business Value:**
 * **Risk Detection:** Identified that a "Neutral" or "Negative" business outlook nearly doubles the probability of employee churn, acting as a critical early warning signal[cite: 336, 384].
@@ -33,6 +33,8 @@ This project demonstrates a full-stack data science workflow:
 * **Model Performance:** Comparative analysis showing LightGBM's dominance in F1/AUC metrics.
 * **Retention Drivers:** Feature importance plots highlighting "Business Outlook" and "Overall Rating" as top predictors.
 * **Cluster Radar:** Visualizing the trade-offs between Compensation and Culture across different firm sizes.
+
+Note: A sample dataset (data/glassdoor_sample.csv) is provided for demonstration. The full dataset is excluded for privacy/size reasons.
 
 ## 📂 Repository Structure
 ```text
