@@ -5,28 +5,28 @@
 High employee turnover is a critical cost driver for modern enterprises. This project is an end-to-end analytics solution—spanning cloud-based data collection, natural language processing, and predictive modeling—designed to identify retention drivers and forecast workforce churn.
 
 **Business Value:**
-* [cite_start]**Risk Detection:** Identified that a "Neutral" or "Negative" business outlook nearly doubles the probability of employee churn, acting as a critical early warning signal[cite: 336, 384].
-* [cite_start]**Strategic Planning:** Forecasted workforce stability using time-series modeling (Prophet), enabling data-driven hiring capacity planning[cite: 644].
-* [cite_start]**Culture Audit:** Revealed a "Culture Gap" where large firms pay higher salaries but consistently lag behind smaller agile firms in culture and work-life balance ratings[cite: 221, 520].
+* **Risk Detection:** Identified that a "Neutral" or "Negative" business outlook nearly doubles the probability of employee churn, acting as a critical early warning signal[cite: 336, 384].
+* **Strategic Planning:** Forecasted workforce stability using time-series modeling (Prophet), enabling data-driven hiring capacity planning[cite: 644].
+* **Culture Audit:** Revealed a "Culture Gap" where large firms pay higher salaries but consistently lag behind smaller agile firms in culture and work-life balance ratings[cite: 221, 520].
 
 ## 🛠️ Technical Architecture
 This project demonstrates a full-stack data science workflow:
 
 ### 1. Data Collection (Cloud & Engineering)
-* [cite_start]**Infrastructure:** Deployed an Ubuntu VM on **Kakao Cloud** to execute long-running scraping tasks[cite: 77].
-* [cite_start]**Scraping Pipeline:** Built a Python/Selenium scraper with anti-blocking measures (rotating User-Agents, randomized delays) to harvest **560,000+ reviews**[cite: 78, 79].
+* **Infrastructure:** Deployed an Ubuntu VM on **Kakao Cloud** to execute long-running scraping tasks[cite: 77].
+* **Scraping Pipeline:** Built a Python/Selenium scraper with anti-blocking measures (rotating User-Agents, randomized delays) to harvest **560,000+ reviews**[cite: 78, 79].
 * **Data Engineering:** Parsed raw HTML/JSON snapshots into structured CSVs, handling skill arrays and date normalization.
 
 ### 2. Predictive Modeling (Machine Learning)
 * **Churn Prediction:** Trained and evaluated Logistic Regression, XGBoost, and LightGBM models.
-* [cite_start]**Result:** The **LightGBM** model achieved the highest performance with an **F1-Score of 0.3511** and **AUC of 0.638**, successfully identifying at-risk employees better than the baseline[cite: 383, 394].
+* **Result:** The **LightGBM** model achieved the highest performance with an **F1-Score of 0.3511** and **AUC of 0.638**, successfully identifying at-risk employees better than the baseline[cite: 383, 394].
 
 ### 3. Unsupervised Learning (NLP & Clustering)
-* [cite_start]**Topic Modeling:** Applied **LDA (Latent Dirichlet Allocation)** to extract latent themes from thousands of "Pros/Cons" text reviews[cite: 575].
-* [cite_start]**Segmentation:** Utilized **K-Means Clustering** (Silhouette Score: 0.47) to segment companies by cultural DNA, proving that "Perks" do not equal "Culture"[cite: 497, 794].
+* **Topic Modeling:** Applied **LDA (Latent Dirichlet Allocation)** to extract latent themes from thousands of "Pros/Cons" text reviews[cite: 575].
+* **Segmentation:** Utilized **K-Means Clustering** (Silhouette Score: 0.47) to segment companies by cultural DNA, proving that "Perks" do not equal "Culture"[cite: 497, 794].
 
 ### 4. Forecasting (Time-Series)
-* [cite_start]**Trend Analysis:** Deployed **Facebook Prophet** to model monthly churn rates, achieving a robust **Mean Absolute Error (MAE) of 0.0160**, outperforming ARIMA and VAR models[cite: 644, 784].
+* **Trend Analysis:** Deployed **Facebook Prophet** to model monthly churn rates, achieving a robust **Mean Absolute Error (MAE) of 0.0160**, outperforming ARIMA and VAR models[cite: 644, 784].
 
 ## 📊 Key Visualizations
 *(See `images/` folder for full charts)*
